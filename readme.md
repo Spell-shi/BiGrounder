@@ -6,7 +6,7 @@
 <p>On-policy instruction generation and cycle-consistent reinforcement for GUI grounding.</p>
 
 <p align="center">
-  &nbsp;&nbsp;📑 <a href="#">Paper</a>&nbsp;&nbsp; | &nbsp;&nbsp;🤗 <a href="#">Dataset</a>&nbsp;&nbsp; | &nbsp;&nbsp;🤖 <a href="#">Model</a>&nbsp;&nbsp;
+  &nbsp;&nbsp;📑 <a href="#">Paper</a>&nbsp;&nbsp; | &nbsp;&nbsp;🤗 <a href="https://huggingface.co/datasets/SnowRainsdy/ScaleCUA_Bbox_Rewrite">Dataset</a>&nbsp;&nbsp; | &nbsp;&nbsp;🤖 <a href="#">Model</a>&nbsp;&nbsp;
 </p>
 
 <p>
