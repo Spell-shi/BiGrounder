@@ -49,7 +49,7 @@ class BiGrounderModel():
         self.set_generation_config(
             do_sample=False,
             temperature=0.0,
-            max_new_tokens=1024,  # adjust to the SFT output length
+            max_new_tokens=1024,
         )
 
     def set_generation_config(self, **kwargs):
@@ -108,7 +108,6 @@ class BiGrounderModel():
             out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
         ]
 
-        # Note: skip_special_tokens=True strips <|box_start|> etc., so the output becomes (300,142)
         response = self.processor.batch_decode(
             generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
         )[0]
@@ -127,7 +126,6 @@ class BiGrounderModel():
         try:
             # Regex: directly match (number,number)
             # Handles (300,142) or (300, 142)
-            # This matches start_box='(300,142)' in the raw response
             pattern = r"\((\d+)\s*,\s*(\d+)\)"
 
             match = re.search(pattern, response)

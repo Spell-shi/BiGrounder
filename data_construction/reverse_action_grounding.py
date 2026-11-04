@@ -45,7 +45,7 @@ def extract_data(messages):
     if not coord_match:
         raise ValueError("Failed to extract coordinates")
 
-    raw_coords = coord_match.group(1).strip()  # e.g. "(1545,218)"
+    raw_coords = coord_match.group(1).strip()
 
     # 4. Format the coordinates
     # If a single point (x,y) is extracted, the target format needs a point pair (x,y),(x,y)

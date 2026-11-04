@@ -57,11 +57,11 @@ from .weight_converter import (
 class SupportedModel(Enum):
     LLAMA = "LlamaForCausalLM"  # tested
     QWEN2 = "Qwen2ForCausalLM"  # tested
-    QWEN2_MOE = "Qwen2MoeForCausalLM"  # pending
-    DEEPSEEK_V3 = "DeepseekV3ForCausalLM"  # not tested
+    QWEN2_MOE = "Qwen2MoeForCausalLM"
+    DEEPSEEK_V3 = "DeepseekV3ForCausalLM"
     MIXTRAL = "MixtralForCausalLM"  # tested
     QWEN2_5_VL = "Qwen2_5_VLForConditionalGeneration"  # not supported
-    LLAMA4 = "Llama4ForConditionalGeneration"  # not tested
+    LLAMA4 = "Llama4ForConditionalGeneration"
     QWEN3 = "Qwen3ForCausalLM"  # tested
     QWEN3_MOE = "Qwen3MoeForCausalLM"  # tested
     GLM4_MOE = "Glm4MoeForCausalLM"

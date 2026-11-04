@@ -48,11 +48,11 @@ BiGrounder pairs each grounding task with its reverse instruction- or descriptio
 | Bounding box | Description to bounding box | Bounding box to region description |
 | Point | Description to target point | Target point to element description |
 
-The Bi-SFT corpus contains **4.482M samples**, split equally into **2.241M forward** and **2.241M reverse** samples. It combines **ScaleCUA** with the **Video-Audio Production subset of GroundCUA** and its reverse counterparts. An optional **Gemini-2.5-Flash** refinement step rewrites bounding-box descriptions into action-oriented instructions.
+The Bi-SFT corpus contains 4.482M samples, split equally into 2.241M forward and 2.241M reverse samples. It combines ScaleCUA with the Video-Audio Production subset of GroundCUA and its reverse counterparts. An optional Gemini-2.5-Flash refinement step rewrites bounding-box descriptions into action-oriented instructions.
 
 See [data_construction](data_construction/readme.md) for an action-grounding conversion example.
 
-For instruction-variation evaluation, [OSWorld-G-R-Variants](OSWorld-G-R-Variants/OSWorld-G-R-Variants.json) contains **1,692 rewritten instructions** for **564 targets**. Pairing each original instruction with its three variants gives **2,256 grounding queries**.
+For instruction-variation evaluation, [OSWorld-G-R-Variants](OSWorld-G-R-Variants/OSWorld-G-R-Variants.json) contains 1,692 rewritten instructions for 564 targets. Pairing each original instruction with its three variants gives 2,256 grounding queries.
 
 ## Usage
 
@@ -114,4 +114,4 @@ G is `GROUP_SIZE`, K is `FORWARD_ROLLOUTS`. These settings appear at the top of 
 
 ## Acknowledgments
 
-BiGrounder builds on **ms-swift** and **verl-agent**, and uses grounding data from **ScaleCUA** and **GroundCUA**. Third-party frameworks retain their original copyright notices and licenses: [ms-swift](Bi_SFT/ms-swift-4.0.0/LICENSE) and [verl-agent](Bi_RL/verl-agent-master/LICENSE).
+BiGrounder builds on **ms-swift** and **verl-agent**, and uses grounding data from ScaleCUA and GroundCUA. We greatly appreciate their outstanding work. Third-party frameworks retain their original copyright notices and licenses: [ms-swift](Bi_SFT/ms-swift-4.0.0/LICENSE) and [verl-agent](Bi_RL/verl-agent-master/LICENSE).
